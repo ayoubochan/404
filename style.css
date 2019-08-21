@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+body {
+  height: 100vh;
+  margin: 0;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  font-family: 'Quicksand', sans-serif;
+  position: absolute;
+  transform: translate(0%, -50%);
+  top: 50%;
+  width: 100%;
+  justify-content: center;
+}
+
+.error {
+  font-size: 400px;
+  display: flex;
+  align-items: center;
+  cursor: default;
+}
+
+.error p {
+  margin: 0;
+}
+
+.error span {
+  font-size: 250px;
+  height: 300px;
+}
+
+.message p {
+  font-size: 70px;
+  margin-top: 140px;
+  margin-bottom: 30px;
+}
+
+.message a {
+  text-decoration: none;
+  color: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 25px;
+  transition: background-color 300ms, color 300ms ease-in;
+}
+
+.message a:hover {
+  background-color: black;
+  color: white;
+}
+
+.arrow{
+  font-size: 30px;
+}
+
+.black-circle {
+  background-color: black;
+  padding: 20px;
+  border-radius: 120px;
+}
+
+.white-circle {
+  background-color: white;
+  padding: 80px;
+  border-radius: 100px;
+}
+
+.square {
+  background-color: black;
+  padding: 20px;
+  animation: rotation 10s linear infinite
+}
+
+@keyframes rotation {
+  from {transform: rotate(0);}
+  to {transform: rotate(360deg);}
+}
