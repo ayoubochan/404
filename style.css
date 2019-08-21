@@ -61,18 +61,30 @@ body {
   background-color: black;
   padding: 20px;
   border-radius: 120px;
+  animation: scale 3s ease-in-out infinite;
 }
 
 .white-circle {
   background-color: white;
   padding: 80px;
   border-radius: 100px;
+  animation: scaleWhite 3s ease-in-out infinite;
 }
 
 .square {
   background-color: black;
   padding: 20px;
   animation: rotation 10s linear infinite
+}
+
+@keyframes scale {
+  50% {padding: 50px}
+  100% {padding: 20px}
+}
+
+@keyframes scaleWhite {
+  50% {padding: 50px}
+  100% {padding: 80px}
 }
 
 @keyframes rotation {
